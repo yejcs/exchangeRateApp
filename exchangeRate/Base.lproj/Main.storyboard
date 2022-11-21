@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exchangeRate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 달러 환율" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzO-YM-P8k">
+                                <rect key="frame" x="146.66666666666666" y="127" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttG-Gl-Eet">
+                                <rect key="frame" x="248.66666666666663" y="120" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="dollarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBB-Bk-6EM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 유로 환율" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9V-bz-h48">
+                                <rect key="frame" x="146.66666666666666" y="178" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 엔화 환율" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWT-bF-yM7">
+                                <rect key="frame" x="146.66666666666666" y="229" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzh-Mg-lZj">
+                                <rect key="frame" x="248.66666666666663" y="171" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="euroBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Zw-nC-hjv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK7-pn-aoW">
+                                <rect key="frame" x="248.66666666666663" y="222" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="yenBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ms1-54-4w6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ttG-Gl-Eet" firstAttribute="leading" secondItem="DzO-YM-P8k" secondAttribute="trailing" constant="5" id="6fB-7I-YWr"/>
+                            <constraint firstItem="FK7-pn-aoW" firstAttribute="top" secondItem="gzh-Mg-lZj" secondAttribute="bottom" constant="16" id="9Q7-Mn-EFs"/>
+                            <constraint firstItem="gzh-Mg-lZj" firstAttribute="top" secondItem="ttG-Gl-Eet" secondAttribute="bottom" constant="16" id="9q5-dg-L4I"/>
+                            <constraint firstItem="a9V-bz-h48" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="B8d-Vo-CD1"/>
+                            <constraint firstItem="FK7-pn-aoW" firstAttribute="leading" secondItem="UWT-bF-yM7" secondAttribute="trailing" constant="5" id="EnD-5r-qhq"/>
+                            <constraint firstItem="a9V-bz-h48" firstAttribute="top" secondItem="DzO-YM-P8k" secondAttribute="bottom" constant="30" id="IMz-JJ-pPl"/>
+                            <constraint firstItem="ttG-Gl-Eet" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="R4A-gK-Nm1"/>
+                            <constraint firstItem="DzO-YM-P8k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Xl8-eG-41j"/>
+                            <constraint firstItem="DzO-YM-P8k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cxa-nZ-9qn"/>
+                            <constraint firstItem="UWT-bF-yM7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gXe-EN-svi"/>
+                            <constraint firstItem="UWT-bF-yM7" firstAttribute="top" secondItem="a9V-bz-h48" secondAttribute="bottom" constant="30" id="oCB-fn-sNO"/>
+                            <constraint firstItem="gzh-Mg-lZj" firstAttribute="leading" secondItem="a9V-bz-h48" secondAttribute="trailing" constant="5" id="tRU-jC-3SF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="euroExchangeRateLb" destination="a9V-bz-h48" id="gdh-KB-Pvn"/>
+                        <outlet property="exchangeRateLb" destination="DzO-YM-P8k" id="yjd-sq-fAg"/>
+                        <outlet property="yenExchangeRateLb" destination="UWT-bF-yM7" id="YKD-Rc-9Et"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
